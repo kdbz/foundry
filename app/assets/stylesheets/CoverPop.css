@@ -21,10 +21,9 @@
     animation-name: fade-in .25s ease-in;
 }
 
-    .CoverPop-open #CoverPop-cover {
-        display: block;
-    }
-
+.CoverPop-open #CoverPop-cover {
+    display: block;
+}
 
 @-webkit-keyframes fade-in {
     0% { opacity: 0; }

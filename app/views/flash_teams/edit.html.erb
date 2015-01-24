@@ -40,25 +40,10 @@
 		      <%= render :partial => "timeline" %>
 	        </div>
 	      </div>
-        </div> <!-- end of body (e.g., class="span9") -->
+      </div> <!-- end of body (e.g., class="span9") -->
 	
-	</div> <!-- end of div class="row-fluid" -->
+	</div> <!-- end of div class="row-fluid" -->   
 
-  <!-- start popup -->
-  <div id="CoverPop-cover" class="splash">
-    
-    <div class="CoverPop-content splash-center">
-
-        <!-- the popup content (form, welcome message, etc.) -->
-
-        <a class="CoverPop-close" href="#">or skip signup</a>
-
-    </div><!--end .splash-center -->
-
-
-  </div><!--end .splash -->
-  <!-- end popup -->
-   
 <% end %> <!--end if in author view conditional--> 
        
 <% if  @in_expert_view %>
@@ -102,6 +87,23 @@
 		
 	</div><!-- end of div class="row-fluid" -->
 
+
+  <!-- A welcome popover for a worker's first time on the site -->
+  <!-- start popup -->
+  <div id="CoverPop-cover" class="splash">
+    
+    <div class="CoverPop-content splash-center">
+
+        <!-- the popup content (form, welcome message, etc.) -->
+        <h3>Welcome to Foundry!</h3>
+        Your tasks are highlighted in yellow. 
+        Click 'Start Foundry Tour' in the upper right of the screen to learn more about the site. 
+        <a class="CoverPop-close" href="#">Close</a>
+
+    </div><!--end .splash-center -->
+  </div><!--end .splash -->
+  <!-- end popup -->
+
 <% end %> <!--end if in expert view conditional--> 
 
 
@@ -113,6 +115,9 @@
 <%= javascript_include_tag "https://apis.google.com/js/client.js?onload=handleClientLoad" %>
 <%= javascript_include_tag "https://apis.google.com/js/api.js"%>
 
+<script> 
+    CoverPop.start();
+</script>
 
 <script>
   (function() {
