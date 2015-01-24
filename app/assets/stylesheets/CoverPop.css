@@ -1,7 +1,8 @@
 /* Styles for the CoverPop.js plugin */
 .CoverPop-open,
 .CoverPop-open body {
-    overflow: hidden;
+    overflow: auto;
+    position: relative;
 }
 
 #CoverPop-cover {
@@ -28,4 +29,19 @@
     0% { opacity: 0; }
     25% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+#CoverPop-cover {
+    background-color: #e4e4e4;
+    opacity: .8;
+}
+
+.CoverPop-content  {
+    background-color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.CoverPop-content h3{
+    background-color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
